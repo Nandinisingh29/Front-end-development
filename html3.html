@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash</title>
+</head>
+<body>
+    <!--<p>Hello students</p>-->
+    <button id="b" onclick=myfunction()>click here!</button>
+    <p id="statements">Stat1</p>
+    <!-- <p>stat2</p> -->
+    
+    <script>
+        // class MyName{
+        //     constructor(name,profession,salary)
+        //     {
+        //         this.name=name
+        //         this.profession=profession
+        //         this.salary=salary
+        //     }
+        // }
+        // my=new MyName("Akash","employee","98000")
+        var obj={
+            "name":"Akash",
+            "roll no":5,
+            "gender":"m"
+        }
+        var jsn=JSON.stringify(obj);
+        var newobj=JSON.parse(jsn)
+        function myfunction()
+        {
+            // const fruits=["mango","papaya","banana","litchi","fig"]
+            // fruits.sort()
+            document.getElementById("statements").innerHTML=newobj.name
+        }
+    </script>
+</body>
+</html>
